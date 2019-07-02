@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".view.CadastroActivity"
+    android:background="@drawable/fundo_camuflado">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/cadConta"
+        android:background="#e2dfdf"
+        android:textColor="#151414"
+        android:textStyle="bold"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="#e2dfdf"
+                android:text="@string/titulo_nomeArma"
+                android:textColor="#131313"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="#e2dfdf"
+                android:text="@string/editEmail"
+                android:textColor="#131313"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:background="#e2dfdf"
+                android:text="@string/editSenha"
+                android:textColor="#131313"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="#fff"
+                android:hint="@string/hint_nome_conta"
+                android:drawableLeft="@drawable/ic_action_login1"
+                android:padding="3dp"
+                android:textColor="#131313"
+
+                android:textColorHint="#131313" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="#fff"
+                android:textColor="#131313"
+                android:hint="@string/hint_email_conta"
+                android:padding="3dp"
+                android:drawableLeft="@drawable/ic_action_login"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:textColorHint="#131313" />
+
+            <EditText
+                android:id="@+id/et_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="#fff"
+                android:textColor="#131313"
+                android:hint="@string/hint_senha_conta"
+                android:padding="6dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:textColorHint="#000" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cad"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="#e2dfdf"
+            android:layout_margin="5sp"
+            android:textStyle="bold"
+            android:textColor="#131313"
+            android:onClick="cadastrar"
+            />
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/button_voltar"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="#e2dfdf"
+            android:layout_margin="5sp"
+            android:textStyle="bold"
+            android:textColor="#131313"
+            android:onClick="voltar"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

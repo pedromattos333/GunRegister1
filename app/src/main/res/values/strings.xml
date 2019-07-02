@@ -1,0 +1,76 @@
+<resources>
+
+
+    <!--String botões do armamento-->
+
+    <string name="button_cad">Cadastrar</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="button_fazlogin">Entrar</string>
+    <string name="button_esqueci">Esqueci minha senha</string>
+    <string name="button_pesquisar">Pesquisar</string>
+    <string name="button_voltar">Voltar</string>
+    <string name="button_fechar">Fechar</string>
+    <string name="button_chama_tela_cad_arma">Cadastrar Armamento</string>
+    <string name="button_chama_tela_pesq_arma">Pesquisar Armamento</string>
+    button_cad_arma
+
+    <!--Strings do Login-->
+
+    <string name="hint_login">Digite seu Login</string>
+    <string name="faz_login">Login</string>
+    <string name="faz_senha">Senha</string>
+    <string name="hint_senha">Digite sua Senha</string>
+    <string name="hint_ajuda">Ajuda</string>
+    <string name="hint_guncont">Gun Register</string>
+    <string name="hint_entrar">Entrar</string>
+
+    <!--Strings de Erros-->
+
+
+    <string name="erro_nome">Nome é Obrigatório</string>
+    <string name="erro_calibre">Calibre é obrigatório</string>
+    <string name="erro_tipo">Tipo é Obrigatório</string>
+    <string name="erro_marca">Marca é obrigatório</string>
+    <string name="erro_login">Login é Obrigatório</string>
+
+
+    <!--Strings de sucesso-->
+
+    <string name="cad_sucesso">Arma cadastrada com Sucesso</string>
+    <string name="edit_sucesso">Editado com Sucesso</string>
+    <string name="exclu_sucesso">Excluido com Sucesso</string>
+
+    <!--Menus-->
+
+    <string name="menu_ajuda">Ajuda</string>
+    <string name="menu_sair">Sair</string>
+    <string name="menu_funcionario">Funcionario</string>
+    <string name="menu_Armamento">Armamento</string>
+    <string name="app_name">GunRegister</string>
+    <string name="cadConta">Cadastro</string>
+    <string name="editEmail">Email</string>
+    <string name="editSenha">Senha</string>
+
+    <!--Strings da Tela Armamento-->
+    <string name="titulo_armamento">Gun Register</string>
+    <string name="button_cad_arma">Cadastrar Armamento</string>
+    <string name="button_pesq_arma">Pesquisar Armamento</string>
+    <string name="titulo_prod">Produtos</string>
+
+    <!--Strings de cadastro do armamento-->
+    <string name="titulo_nomeArma">Nome</string>
+    <string name="edit_calibreArma">Calibre</string>
+    <string name="edit_tipoProduto">Tipo</string>
+    <string name="edit_marcaProduto">Marca</string>
+    <string name="hint_nome_arma">Digite o nome do armamento</string>
+    <string name="hint_tipo_arma">Digite o tipo de armamento</string>
+    <string name="hint_marca_arma">Digite a marca do armamento</string>
+    <string name="hint_calibre">Digite o calibre do armamento</string>
+
+    <!--Strings de cadastro De Conta-->
+
+    <string name="hint_nome_conta">Digite o nome</string>
+    <string name="hint_email_conta">Digite o e-mail</string>
+    <string name="hint_senha_conta">Digite a senha</string>
+
+</resources>
