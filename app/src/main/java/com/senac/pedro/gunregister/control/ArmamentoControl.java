@@ -32,7 +32,7 @@ public class ArmamentoControl {
     private EditText editMarca;
     private EditText editCalibre;
     private ArrayAdapter<Armamento> adapterArma;
-    private ListView lvArmamento;
+
 
     private Armamento armamento = null;
     private ArmamentoDao armamentoDao;
@@ -109,78 +109,9 @@ public class ArmamentoControl {
         activity.finish();
     }
 
-    private void cliqueCurto(){
-        lvArmamento.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                armamento = adapterArma.getItem(position);
-                AlertDialog.Builder alerta = new AlertDialog.Builder(activity);
-                alerta.setTitle("Visualizando armas");
-                alerta.setMessage(armamento.toString());
-                alerta.setNeutralButton("Fechar", null);
-                alerta.setPositiveButton("Editar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        editNome.setText(armamento.getNome());
-                        editTipo.setText(armamento.getTipo());
-                        editMarca.setText(armamento.getMarca());
-                        editCalibre.setText(armamento.getCalibre());
-                    }
-                });
-                alerta.show();
-            }
-        });
-    }
-
-    private void cliqueLongo(){
-        lvArmamento.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                armamento = adapterArma.getItem(position);
-                AlertDialog.Builder alerta = new AlertDialog.Builder(activity);
-                alerta.setTitle("Excluindo armamento");
-                alerta.setMessage("Tem certeza que deseja excluir " + armamento.getNome()+"?");
-                alerta.setIcon(android.R.drawable.ic_menu_delete);
-                alerta.setNeutralButton("Não", null);
-                alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            armamentoDao.getDao().delete(armamento);
-                            adapterArma.remove(armamento);
-                            armamento = null;
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-                alerta.show();
-                return true;
-            }
-        });
-    }
-
-
-        public void pesquisarAction(){
-            montarListView();
-        }
 
 
 
-    private void montarListView() {
-        try {
-            adapterArma = new ArrayAdapter<>(
-                    activity,
-                    android.R.layout.simple_list_item_1,
-                    armamentoDao.getDao().queryForAll()
-            );
-            lvArmamento.setAdapter(adapterArma);
-            cliqueCurto();
-            cliqueLongo();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 
     }
 

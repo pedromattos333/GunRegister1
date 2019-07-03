@@ -50,6 +50,7 @@
     <string name="cadConta">Cadastro</string>
     <string name="editEmail">Email</string>
     <string name="editSenha">Senha</string>
+    <string name="titulo_pesq_arma">Pesquisar Armamento</string>
 
     <!--Strings da Tela Armamento-->
     <string name="titulo_armamento">Gun Register</string>

@@ -29,8 +29,7 @@ public class MainControl {
         activity.startActivity(it);
     }
     public void voltarAction() {
-        Intent it = new Intent(activity, MainActivity.class);
-        activity.startActivity(it);
+        activity.finish();
     }
 
     public void sairAction() {
